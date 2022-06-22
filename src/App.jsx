@@ -12,6 +12,7 @@ import { LandscapePhoto } from "./components/LandscapePhoto";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 const baseUrl = "http://localhost:3007";
+// const baseUrl = "https://node-express-server-st-001.herokuapp.com";
 const url = `${baseUrl}/all`;
 
 
