@@ -11,11 +11,13 @@ import { LandscapePhoto } from "./components/LandscapePhoto";
 
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-const baseUrl = "http://localhost:3007";
+// const baseUrl = "http://localhost:3007";
 // const baseUrl = "https://node-express-server-st-001.herokuapp.com";
-const url = `${baseUrl}/all`;
+const backend_url = import.meta.env.VITE_BACKEND_URL;
+//wird in env definiert
+const url = `${backend_url}/all`;
 
-
+console.log(backend_url);
 const separator = "|";
 function App() {
     // const [siteData, setSiteData] = useState({});
